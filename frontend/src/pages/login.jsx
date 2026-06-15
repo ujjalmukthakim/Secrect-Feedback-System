@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 
 
 
-const login = () => {
+const Login = () => {
 
     const {register,handleSubmit}=useForm();
 
@@ -12,9 +12,9 @@ const login = () => {
 
     return (
         <div>
-            
+            <p>ok</p>
         </div>
     );
 };
 
-export default login;
+export default Login;
