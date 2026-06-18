@@ -19,6 +19,13 @@ const Login = () => {
     return (
         <div>
             <form action="" onSubmit={handleSubmit(ItSubmit)}>
+                <label htmlFor="email">
+                    <span>Email</span>
+                </label>
+                <input
+                id='email'
+                type='email'
+                {...register('email')}/>
 
             </form>
         </div>
