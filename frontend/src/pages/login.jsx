@@ -10,9 +10,17 @@ const Login = () => {
 
 
 
+    const ItSubmit(){
+
+    }
+
+
+
     return (
         <div>
-            <p>ok</p>
+            <form action="" onSubmit={handleSubmit(ItSubmit)}>
+
+            </form>
         </div>
     );
 };
