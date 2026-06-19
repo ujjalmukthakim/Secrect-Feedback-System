@@ -10,7 +10,8 @@ const Login = () => {
 
 
 
-    const ItSubmit(){
+    const ItSubmit=(ok)=>{
+        console.log('ok')
 
     }
 
@@ -19,13 +20,24 @@ const Login = () => {
     return (
         <div>
             <form action="" onSubmit={handleSubmit(ItSubmit)}>
-                <label htmlFor="email">
-                    <span>Email</span>
+                <label htmlFor="username">
+                    <span>Username</span>
                 </label>
                 <input
-                id='email'
-                type='email'
-                {...register('email')}/>
+                id='username'
+                type='text'
+                {...register('username')}/>
+
+                <label htmlFor="password">
+                    <span>Password</span>
+                </label>
+                <input
+                id='password'
+                type='password'
+                {...register('password')}/>
+                <button type='submit'>Submit</button>
+
+                
 
             </form>
         </div>
