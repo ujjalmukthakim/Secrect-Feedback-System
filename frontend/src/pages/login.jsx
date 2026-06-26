@@ -1,5 +1,6 @@
-import {useState} from 'react';
+// import {useState} from 'react';
 import { useForm } from "react-hook-form";
+import API from "../api";
 
 
 
@@ -10,8 +11,15 @@ const Login = () => {
 
 
 
-    const ItSubmit=(ok)=>{
-        console.log('ok')
+    const ItSubmit=(data)=>{
+        API.post('/login/',data).then((res)=>{
+            console.log(res.data)
+            console.log(res.data.token)
+        }).catch((err)=>{
+            console.log(err)
+        })
+
+        // console.log(data)
 
     }
 
