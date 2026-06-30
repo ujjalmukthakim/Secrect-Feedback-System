@@ -12,7 +12,7 @@ const Login = () => {
 
 
     const ItSubmit=(data)=>{
-        API.post('/login/',data).then((res)=>{
+        API.post('login/',data).then((res)=>{
             console.log(res.data)
             console.log(res.data.token)
         }).catch((err)=>{
