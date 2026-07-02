@@ -1,6 +1,7 @@
 // import {useState} from 'react';
 import { useForm } from "react-hook-form";
 import API from "../api";
+import {Link} from 'react-router-dom'
 
 
 
@@ -48,6 +49,7 @@ const Login = () => {
                 
 
             </form>
+            <Link to="/register">Register</Link>
         </div>
     );
 };
